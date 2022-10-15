@@ -3,6 +3,7 @@
 
 # include <unistd.h>
 # include <stdio.h>
+# include <stdlib.h>
 # include <fcntl.h>
 
 # include "./minilibx/mlx.h"
@@ -15,5 +16,8 @@
 
 # define ERR_ARG "Please, give me a map.."
 # define ERR_FILE_TYPE "Your map file is wrong"
+
+void    errorMsg(char *err);
+int check_file_type(char *file_path);
 
 #endif
